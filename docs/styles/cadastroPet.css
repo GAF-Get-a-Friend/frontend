@@ -114,6 +114,9 @@
 }
 
 @media screen and (max-width: 500px) {
+  #content {
+    width: 95%;
+  }
   .grid-col-2 {
     display: flex;
     flex-direction: column;
