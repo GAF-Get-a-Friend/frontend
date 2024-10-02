@@ -14,7 +14,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     line-height: 1.6;
-    height: 100vh;
 }
 
 /* Navbar */
@@ -23,11 +22,12 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #d5ae8a;
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
 }
 
 .logo img {
-    width: 4rem; /* Tamanho ajustável da logo */
+    width: 7rem; 
+
 }
 
 .nav-links {
@@ -120,6 +120,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 2rem; /* Espaçamento entre os cards */
+    margin-bottom: 1rem;
 }
 
 .card {
