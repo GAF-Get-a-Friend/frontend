@@ -8,6 +8,14 @@
 
 O "Get a Friend" é uma plataforma online cujo objetivo é facilitar a conexão entre pessoas interessadas em adotar pets e ONGs que trabalham com resgate e adoção de animais. Através da plataforma, usuários podem encontrar informações detalhadas sobre animais disponíveis para adoção, filtrar por suas preferências, e iniciar o processo de adoção de forma fácil e segura.
 
+## Funcionalidades
+
+Na plataforma será possível acessá-lá através de um login cujo tera informações de Nome e senha. Mais a fundo, pela parte dos clientes será possível a adoção de pets que estão disponíveis por ONGs cadastradas no site, onde também será possível por parte da mesma fazer o cadastro de sua ONG e com isso, fazer o cadastro de seus pets dispoíveis.
+
+## Tecnologias
+
+<img src="https://skillicons.dev/icons?i=js,nodejs,html,css,github,php&perline=6" width="38%" height="38%"/>
+
 ## 🤝 Collaborators
 
 <table>
