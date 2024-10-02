@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/cadastroPet.css" />
+  </head>
+  <body>
+    <div id="screen">
+      <form id="content">
+        <h1 id="title">Registre um pet para ser adotado</h1>
+        <label for="foto" class="text">Foto</label>
+        <div id="image_upload">
+          <!-- <input required type="file" name="foto" id="foto" /> -->
+          <input type="file" id="upload" class="custom-file-input" />
+          <label for="upload" class="custom-file-label">Escolha um arquivo</label>
+        </div>
+        <div class="grid-col-2">
+          <div class="grid-item">
+            <label class="text" for="petName">Nome do Pet</label>
+            <input required class="form-input" type="text" />
+          </div>
+          <div class="grid-item">
+            <label class="text" for="sexo">Sexo</label>
+            <input required class="form-input" type="text" />
+          </div>
+        </div>
+        <label class="text" for="idade">Idade</label>
+        <input required class="form-input" type="text" />
+        <label class="text" for="descricao">Descrição</label>
+        <input required class="form-input" type="text" />
+        <button type="submit" id="submit-button">
+          <img src="../images/confirm.png" alt="" id="submit-image" />
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
