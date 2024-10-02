@@ -71,8 +71,13 @@ input::placeholder{
 }
 #btn_salvar{
   width: 20%;
-
+  margin-left: 583px;
 }
+
+.btn_voltarLogin{
+  width: 20%;
+}
+
 
 label{
   color: #FCF7D3;
