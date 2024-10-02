@@ -18,6 +18,8 @@ Na plataforma será possível acessá-lá através de um login cujo tera informa
 
 ## 🤝 Collaborators
 
+Este será o grupo responsável pelo desenvolvimento do projeto, onde todos nós somos alunos do curso de Ciências da computação na universidade Unimetrocamp Wyden.
+
 <table>
   <tr>
     <td align="center">
