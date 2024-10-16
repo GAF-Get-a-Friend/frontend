@@ -47,7 +47,7 @@ h1{
 
 form{
     height: 70%;
-    background-color: #623D2C;
+    background-color: #845C45;
     
 }
 
@@ -83,7 +83,7 @@ input::placeholder{
     font-size: 12px;
 }
 
-.btn_proximo{
+    #btn_proximo{
     color: #FCF7D3;
     padding: 10px 9px;
     border-radius: 5px;
@@ -91,7 +91,7 @@ input::placeholder{
     font-size: 15px;
     text-decoration: none;
     display: inline-block;
-    margin-top: 120px;
+    margin-left: 161px;
 }
 
 .btn_cadastre{

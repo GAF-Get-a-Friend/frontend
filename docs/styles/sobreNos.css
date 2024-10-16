@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body{
+    background-color: #D9AC83;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.logoDog{
+width: 100px;
+height: 100px;
+position: absolute;
+}
+
+.Identificacao{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tituloSobreNos{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.Fotos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quadrados{
+    background-color: #623C2C;
+    width: 150px;
+    height: 185px;
+    border-radius: 10px;
+}
+
+.quadrados h1{
+    color: #D9AC83;
+    font-size: 20px;
+    text-align: center;
+}
+
+.textoSobre{
+    display: flex;
+    justify-content: center;
+
+}
+
+.quadrado{
+    background-color: #623C2C;
+    width: 79%;
+    height: 185px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.quadrado h1{
+    color: #D9AC83;
+    font-size: 20px;
+    text-align: center;
+}
+

@@ -1,0 +1,174 @@
+/* Reseta o estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define a base de 1rem para tipografia e layout */
+html {
+    font-size: 16px; /* Isso faz 1rem = 16px por padrão */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d5ae8a;
+    padding: 1rem 2rem;
+}
+
+.logo img {
+    width: 4rem; /* Tamanho ajustável da logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 1.875rem; /* 30px convertido em rem */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.125rem; /* 18px convertido em rem */
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.social-icons a {
+    margin-left: 0.625rem; /* 10px convertido em rem */
+    font-size: 1.125rem;
+}
+
+.social-icons a i {
+    color: white;
+}
+
+.social-icons a:hover i {
+    color: #ffcc00;
+}
+
+.profile a {
+    font-size: 1.125rem;
+    color: white;
+    text-decoration: none;
+}
+
+.profile a i {
+    margin-right: 0.3125rem; /* 5px convertido em rem */
+}
+
+/* Seção de conteúdo principal */
+.content {
+    margin: 1.25rem 3.125rem; /* Margem adaptada */
+}
+
+/* Contribuir para adoção */
+.contribuir {
+    width: 500px;
+    background-color: #e3f9cb;
+    padding: 1.25rem; /* 20px convertido em rem */
+    border-radius: 20px; /* 10px convertido em rem */
+    text-align: center;
+    margin-bottom: 1.875rem;
+    margin-left: 3rem;
+    
+}
+
+.contribuir h2 {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.contribuir p {
+    color: #555;
+    margin: 0.625rem 0; /* 10px convertido em rem */
+    font-size: 1rem;
+}
+
+.contribuir button {
+    background-color: #79c479;
+    color: white;
+    border: none;
+    padding: 0.625rem 1.25rem; /* 10px 20px convertido em rem */
+    border-radius: 0.3125rem; /* 5px convertido em rem */
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contribuir button:hover {
+    background-color: #66b366;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Espaçamento entre os cards */
+}
+
+.card {
+    background-color: #D7B899;
+    border-radius: 0.625rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+.first-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quantidade-resgatados {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid black;
+    margin-top: 1rem; /* Espaço entre o conteúdo do card e a quantidade */
+}
+
+.quantidade-resgatados h1 {
+    font-size: 1.125rem; /* Tamanho da fonte da quantidade */
+    color: black;
+}
+
+.card h3 {
+    color: #333;
+    margin-bottom: 0.625rem; /* 10px convertido em rem */
+    font-size: 1.25rem;
+}
+
+.cards img {
+    max-width: 100%;
+    border-radius: 0.625rem; /* 10px convertido em rem */
+    margin-bottom: 0.625rem; /* 10px convertido em rem */
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 0.625rem;
+}
