@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta name= "viewport"content= "widht= device-width, initial-scale= 1.0">
   <title>Get a friend!</title>
   <link rel="stylesheet" href="../styles/cadastroUsuarioStyles.css" />
 </head>
@@ -31,7 +32,10 @@
           <label for="telefone">Telefone *</label>
           <input type="text" name="telefone" id="telefone" value="" placeholder="(00) 0000-00000" maxlength="15" required />
         </div>
-        <input type="submit" value="Salvar" required id="btn_salvar"/>
+        <div class="btns-cadastro">
+          <a href= "../index.html" class="btn_voltarLogin" target="_self" >Voltar</a>
+          <input type="submit"  value="Salvar" required id="btn_salvar"/>
+        </div>
       </form>  
     </section>
    </article>
