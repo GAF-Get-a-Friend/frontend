@@ -1,0 +1,97 @@
+/* Reseta o estilo padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define a base de 1rem para tipografia e layout */
+html {
+  font-size: 16px; /* Isso faz 1rem = 16px por padrão */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+  height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d5ae8a;
+  padding: 1rem 2rem;
+}
+
+.logo img {
+  width: 4rem; /* Tamanho ajustável da logo */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin-left: 1.875rem; /* 30px convertido em rem */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.125rem; /* 18px convertido em rem */
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+/* Estilo geral para o container */
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilo dos cards */
+  .card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  /* Estilo da imagem do card */
+  .card-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 9999px;
+    object-fit: contain;
+  }
+  
+  /* Estilo do conteúdo do card */
+  .card-content {
+    padding: 15px;
+  }
+  
+  /* Estilo do título */
+  .card-title {
+    font-size: 1.25em;
+    margin: 0;
+    color: #333;
+  }
+  
+  /* Estil
+  

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "SUIPA",
+    "descricao": "SUIPA é uma sigla que quer dizer Sociedade União Internacional Protetora dos Animais. Além de um abrigo para resgate de animais, a organização possui ainda uma clínica veterinária que oferece atendimento a preços populares.",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXBxXr7nEcwgqieSKi7CKPdhbdJXat5k2zCg&s",
+    "link": "https://www.suipa.org.br"
+  },
+  {
+    "title": "Ampara Animal",
+    "descricao": "A Ampara Animal oferece um formato diferente das outras ONGs. Eles não possuem recursos próprios, mas se especializaram em captar recursos e repassá-los para ONGs de animais e protetores em um modelo de rodízio. Assim, a Ampara Animal apoia diferentes organizações.",
+    "img": "https://e3ba6e8732e83984.cdn.gocache.net/uploads/image/file/152297/regular_ampara.PNG",
+    "link": "https://amparanimal.org.br/"
+  },
+  {
+    "title": "Cão sem dono",
+    "descricao": "A Cão sem dono é um ONG de proteção animal localizada em São Paulo. Eles possuem um abrigo próprio onde inúmeros cachorros estão disponíveis para adoção. Para financiar seus trabalhos, eles oferecem a opção de apadrinhamento, onde a pessoa se compromete a doar uma certa quantia de dinheiro mensal para ajudar um determinado cachorro do abrigo.",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF_LbOc4jEWyTA0pQn2TNr681yKEvw-3-X-g&s",
+    "link": "http://www.caosemdono.com.br/"
+  }
+]
