@@ -86,7 +86,7 @@ body {
     border-radius: 20px; /* 10px convertido em rem */
     text-align: center;
     margin-bottom: 1.875rem;
-    margin-left: 3rem;
+    margin-left: 43rem;
     
 }
 
@@ -123,7 +123,7 @@ body {
 }
 
 .card {
-    background-color: #D7B899;
+    background-color: #d5ae8a;
     border-radius: 0.625rem;
     padding: 1rem;
     text-align: center;
