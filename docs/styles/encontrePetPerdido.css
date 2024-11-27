@@ -7,7 +7,6 @@
     font-style: normal;
 }
 
-
 /* Navbar */
 .navbar {
     display: flex;
@@ -18,7 +17,7 @@
 }
 
 .logo img {
-    width: 4rem; /* Tamanho ajustável da logo */
+    width: 4rem;
 }
 
 .nav-links {
@@ -28,13 +27,13 @@
 }
 
 .nav-links li {
-    margin-left: 1.875rem; /* 30px convertido em rem */
+    margin-left: 1.875rem;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 1.125rem; /* 18px convertido em rem */
+    font-size: 1.125rem;
 }
 
 .nav-links a:hover {
@@ -42,7 +41,7 @@
 }
 
 .social-icons a {
-    margin-left: 0.625rem; /* 10px convertido em rem */
+    margin-left: 0.625rem;
     font-size: 1.125rem;
 }
 
@@ -61,40 +60,134 @@
 }
 
 .profile a i {
-    margin-right: 0.3125rem; /* 5px convertido em rem */
+    margin-right: 0.3125rem;
 }
 
-article{
+article {    
     border: 2px solid blue;
     height: 100%;
-    width: 100%;
+    width: 100%;    
 }
 
-section{
+section {
     border: 2px solid red;
 }
 
-h1{
+h1 {
     font-size: 30px;
     font-weight: 450;
+    color: #623C2C;
 }
 
-.Filtrar{
+.Filtrar {
     border: 2px solid greenyellow;
+    width: fit-content;
     font-size: 15px;
+    color: #623C2C;
 }
 
-h2{
+h2 {
     font-weight: normal;
 }
 
-.Filtros{
+.Filtros {
     border: 2px solid rgb(7, 222, 255);
+    line-height: 28px;
     display: block;
+    width: fit-content;
 }
 
-h3{
+h3 {
     font-size: 18px;
     font-weight: normal;
+    line-height: 28px;
+    color: #623C2C;
+}
 
+label {
+    color: #623C2C;
+    cursor: pointer;
+}
+
+/* Estilo do botão */
+.dropdown-button {
+    border-radius: 10px;
+    border: none;
+    background-color: #6a5147;
+    color: #f9f6de;
+    width: 250px;
+    padding: 6px;
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Estilo do select */
+.dropdown-select {
+    border-radius: 10px;
+    border: none;
+    background-color: #6a5147;
+    color: #f9f6de;
+    width: 250px;
+    padding: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    appearance: none; /* Remove a aparência padrão */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-align: left;
+}
+
+/* Estilo para o dropdown de opções */
+.dropdown-select option {
+    background-color: #6a5147;
+    color: #f9f6de;
+    padding: 6px;
+    font-size: 14px;
+}
+
+/* Hover no select */
+.dropdown-select:hover {
+    background-color: #5a4037;
+}
+
+
+.container-flex {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.Filtros {
+    flex: 1; /* Tamanho fixo ou ajustável para os filtros */
+    max-width: 250px; /* Largura máxima dos filtros */
+    border: 1px solid #ddd; /* Estilização opcional */
+    padding: 15px; /* Espaçamento interno */
+    background-color: #f9f9f9; /* Fundo dos filtros */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Três colunas com larguras iguais */
+    gap: 50px; /* Espaçamento entre os itens */
+    padding: 40px; /* Espaçamento interno do grid */
+    margin-left: 200px;
+    border-radius: 10px;
+}
+
+.grid-item img {
+    max-width: 100%; /* As imagens ocuparão toda a largura do item */
+    max-height: 100%; /* Mantém a proporção da imagem */
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 10px; /* Cantos arredondados para as imagens */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar as imagens */
+}
+
+.grid-item{
+    background-color: #000;
+    color: #fff;
+    width: 15vw;
+    height: 15vh
+    
 }
