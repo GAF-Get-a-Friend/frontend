@@ -64,13 +64,14 @@
 }
 
 article {    
-    border: 2px solid blue;
     height: 100%;
-    width: 100%;    
+    width: 100%;   
+    
 }
 
 section {
-    border: 2px solid red;
+    height: 766px;
+
 }
 
 h1 {
@@ -80,7 +81,6 @@ h1 {
 }
 
 .Filtrar {
-    border: 2px solid greenyellow;
     width: fit-content;
     font-size: 15px;
     color: #623C2C;
@@ -151,7 +151,6 @@ label {
     background-color: #5a4037;
 }
 
-
 .container-flex {
     display: flex;
     gap: 20px; /* Espaçamento entre os itens */
@@ -170,7 +169,7 @@ label {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Três colunas com larguras iguais */
     gap: 50px; /* Espaçamento entre os itens */
-    padding: 40px; /* Espaçamento interno do grid */
+    padding: 50px; /* Espaçamento interno do grid */
     margin-left: 200px;
     border-radius: 10px;
 }
@@ -185,9 +184,9 @@ label {
 }
 
 .grid-item{
-    background-color: #000;
-    color: #fff;
-    width: 15vw;
-    height: 15vh
+    border: #623C2C;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
     
 }
