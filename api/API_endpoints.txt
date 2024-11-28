@@ -1,0 +1,52 @@
+User - Create
+
+    Method: Post
+    URI: /users
+    Body:
+    {
+        name: string;
+        password: string;
+        email: string;
+        phone: string;
+    }
+
+User - Login
+
+    Method: Post
+    URI: /login
+    Body:
+    {
+        email: string;
+        password: string;
+    }
+
+Create Pet - Create new pet for adoption
+    Method: Post
+    URI: /pets
+    Body:
+    {
+        name: string;
+        sexo: string;
+        idade: int;
+        desc: string;
+    }
+
+Get Pet - Get all pets if not entered race. if race flter
+    Method: Get
+    URI: /pets?race="{}"
+
+Update Pet
+    Method: Put
+    URI: /pets
+    Body:
+    {
+        name: string;
+        sexo: string;
+        idade: int;
+        desc: string;
+        race: string;
+    }
+
+delete Pet
+    Method: Delete
+    URI: /pets/{id}
