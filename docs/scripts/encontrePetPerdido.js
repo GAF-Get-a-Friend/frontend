@@ -1,49 +1,52 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const filtros = document.querySelector('.Filtros');
+async function fetchAndDisplayPets(race) {
+  try {
+    // Monta a URL com o query param 'race'
+    const url = `http://localhost:3000/pets?race=${encodeURIComponent(race)}`;
 
-menuToggle.addEventListener('click', function () {
-    filtros.classList.toggle('active'); // Alterna a classe "active" para abrir/fechar o menu
-});
-
-document.addEventListener('click', function (event) {
-    if (!filtros.contains(event.target) && !menuToggle.contains(event.target)) {
-        filtros.classList.remove('active'); // Fecha o menu se clicar fora
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
     }
+
+    const data = await response.json(); // Resposta da API
+    const pets = data.pets; // Extraindo o array `pets` do objeto
+
+    if (!Array.isArray(pets)) {
+      throw new Error('A propriedade "pets" não é um array.');
+    }
+
+    const container = document.getElementById("petsContainer");
+    container.innerHTML = "";
+
+    pets.forEach((pet) => {
+      const card = document.createElement("div");
+      card.className = "card";
+
+      card.innerHTML = `
+        <img src="${pet.photoLink}" alt="${pet.name}">
+        <h3>${pet.name}</h3>
+        <p><strong>Sexo:</strong> ${pet.sexo}</p>
+        <p><strong>Idade:</strong> ${pet.idade} anos</p>
+        <p><strong>Raça:</strong> ${pet.race}</p>
+        <p>${pet.desc}</p>
+        <p><small>Criado em: ${new Date(
+          pet.createdAt
+        ).toLocaleDateString()}</small></p>
+      `;
+
+      container.appendChild(card);
+    });
+  } catch (error) {
+    console.error("Erro ao buscar dados:", error);
+  }
+}
+
+// Evento para detectar mudanças no select
+const raceSelect = document.getElementById("raceSelect");
+raceSelect.addEventListener("change", () => {
+  const selectedRace = raceSelect.value; // Obtém o valor selecionado
+  fetchAndDisplayPets(selectedRace); // Chama a função com o parâmetro
 });
 
-const apiUrl = "http://localhost:5000/endpoint"
-
-const form = document.getElementById('content');
-
-    // Adiciona um evento para quando o formulário for enviado
-    form.addEventListener('submit', async (event) => {
-      event.preventDefault(); // Previne o envio padrão do formulário
-
-      // Captura os dados do formulário
-      const formData = {
-        nomePet: form.nomePet.value,
-        sexoPet: form.sexoPet.value,
-        idadePet: form.idadePet.value,
-        descricaoPet: form.descricaoPet.value
-      };
-
-      try {
-        // Faz a requisição POST
-        const response = await fetch(apiUrl, {
-          method: 'POST', // Método HTTP
-          headers: {
-            'Content-Type': 'application/json' // Define o tipo de conteúdo
-          },
-          body: JSON.stringify(formData) // Converte os dados para JSON
-        });
-
-        // Verifica se a requisição foi bem-sucedida
-        if (!response.ok) {
-          throw new Error(`Erro na requisição: ${response.status}`);
-        }
-
-      } catch (error) {
-        console.error('Erro ao enviar os dados:', error);
-        document.getElementById('mensagem').textContent = 'Erro ao realizar o cadastro.';
-      }
-    });
+// Carrega inicialmente com o primeiro valor selecionado
+fetchAndDisplayPets(raceSelect.value);

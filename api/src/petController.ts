@@ -5,10 +5,10 @@ const prisma = new PrismaClient();
 
 export const createPet = async (req: Request, res: Response) => {
   try {
-    const { name, sexo, idade, desc, race } = req.body;
+    const { name, sexo, idade, desc, race, photoLink } = req.body;
 
     // Validação básica
-    if (!name || !sexo || idade === undefined || !desc || !race) {
+    if (!name || !sexo || idade === undefined || !desc || !race || !photoLink) {
       res.status(400).json({ error: "Todos os campos são obrigatórios." });
       return;
     }
@@ -21,6 +21,7 @@ export const createPet = async (req: Request, res: Response) => {
         idade,
         desc,
         race,
+        photoLink,
       },
     });
 
@@ -41,6 +42,8 @@ export const getPets = async (req: Request, res: Response) => {
 
     res.status(200).json({ pets });
   } catch (error) {
+    console.log(error);
+    
     res.status(500).json({ error: "Erro ao buscar pets." });
   }
 };
@@ -48,10 +51,10 @@ export const getPets = async (req: Request, res: Response) => {
 export const updatePet = async (req: Request, res: Response) => {
   try {
     const { id } = req.params; // O id do pet vem da URL
-    const { name, sexo, idade, desc, race } = req.body;
+    const { name, sexo, idade, desc, race, photoLink } = req.body;
 
     // Validação dos dados obrigatórios
-    if (!name || !sexo || idade === undefined || !desc || !race) {
+    if (!name || !sexo || idade === undefined || !desc || !race || !photoLink) {
       res.status(400).json({ error: "Todos os campos são obrigatórios." });
       return;
     }
@@ -65,6 +68,7 @@ export const updatePet = async (req: Request, res: Response) => {
         idade,
         desc,
         race,
+        photoLink,
       },
     });
 

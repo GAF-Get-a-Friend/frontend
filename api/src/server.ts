@@ -1,10 +1,12 @@
 import express, { Application } from "express";
+const cors = require("cors");
 import { createUser, loginUser } from "./userController";
 import { createPet, deletePet, getPets, updatePet } from "./petController";
 
 const app: Application = express();
 
 app.use(express.json());
+app.use(cors());
 app.post("/users", createUser);
 app.post("/login", loginUser);
 
