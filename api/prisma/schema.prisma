@@ -27,6 +27,7 @@ model Pet {
   sexo      String
   idade     Int
   desc      String
+  photoLink String
   race      String?  // "race" deve ser um campo opcional, se você estiver lidando com pets que podem ou não ter uma raça definida
   createdAt DateTime @default(now())
 }
