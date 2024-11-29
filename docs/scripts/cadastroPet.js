@@ -1,16 +1,3 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const filtros = document.querySelector('.Filtros');
-
-menuToggle.addEventListener('click', function () {
-    filtros.classList.toggle('active'); // Alterna a classe "active" para abrir/fechar o menu
-});
-
-document.addEventListener('click', function (event) {
-    if (!filtros.contains(event.target) && !menuToggle.contains(event.target)) {
-        filtros.classList.remove('active'); // Fecha o menu se clicar fora
-    }
-});
-
 const apiUrl = "http://localhost:5000/endpoint"
 
 const form = document.getElementById('content');
@@ -21,10 +8,12 @@ const form = document.getElementById('content');
 
       // Captura os dados do formulário
       const formData = {
-        nomePet: form.nomePet.value,
-        sexoPet: form.sexoPet.value,
-        idadePet: form.idadePet.value,
-        descricaoPet: form.descricaoPet.value
+          name: form.nomePet.value,
+          sexo: form.sexoPet.value,
+          idade: form.idadePet.value,
+          desc: form.descricaoPet.value,
+          photoLink: form.photoLink.value,
+          race: form.race.value,
       };
 
       try {
