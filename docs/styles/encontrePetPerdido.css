@@ -16,6 +16,7 @@
   background-color: #d5ae8a;
   padding: 1rem 2rem;
   height: 100%;
+  overflow: hidden;
 }
 
 .logo img {
@@ -26,6 +27,7 @@
   list-style: none;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .nav-links li {
@@ -219,5 +221,12 @@ label {
   .container-flex {
     width: 100%;
     flex-direction: column;
+  }
+  .Filtros {
+    width: 100%;
+    max-width: none;
+  }
+  article {
+    width: 100%;
   }
 }
